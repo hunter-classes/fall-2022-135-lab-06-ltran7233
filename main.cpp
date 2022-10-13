@@ -1,8 +1,9 @@
 #include <iostream>
-
+#include "caesar.h"
 
 
 int main()
 {
-  return 0;
+	std::cout << encryptCaesar("Way to Go!", 5) << std::endl;
+	return 0;
 }

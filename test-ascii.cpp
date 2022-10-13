@@ -9,5 +9,6 @@ int main()
 	for (int i=0; i<s.length(); i++)
 	{
 		std::cout << s[i] << " " << (int)s[i] << std::endl;
-	}
+	} 
 }
+
