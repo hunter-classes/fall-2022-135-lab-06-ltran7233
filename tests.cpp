@@ -2,6 +2,7 @@
 
 #include "doctest.h"
 #include "caesar.h"
+#include "vigenere.h"
 
 TEST_CASE("shiftChar tests")
 {
@@ -10,8 +11,6 @@ TEST_CASE("shiftChar tests")
 	CHECK(shiftChar('f', 14) == 't');
 	CHECK(shiftChar('v', 23) == 's'); 
 	CHECK(shiftChar('x', 18) == 'p');
-	
-	
 }
 
 TEST_CASE("encryptCaesar tests")
@@ -20,4 +19,9 @@ TEST_CASE("encryptCaesar tests")
 	CHECK(encryptCaesar("1234567890", 3) == "1234567890");
 	CHECK(encryptCaesar("!@#$%^&*()", 2) == "!@#$%^&*()");
 	CHECK(encryptCaesar("Large Shift?", 35) == "Ujapn Bqroc?");
+}
+
+TEST_CASE("encryptVigenere tests")
+{
+	CHECK(encryptVigenere("Vigenere Cipher Working!", "program") == "Kzukeedt Twvyed Lffqzns!");
 }
