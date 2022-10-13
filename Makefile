@@ -19,11 +19,11 @@ test-ascii.o: test-ascii.cpp
 caesar.o: caesar.cpp caesar.h
 	g++ -c caesar.cpp
 	
-vigenere.o: vigenere.cpp vigenere.h caesar.h
+vigenere.o: vigenere.cpp caesar.h vigenere.h
 	g++ -c vigenere.cpp
 
 decrypt.o: decrypt.cpp caesar.h vigenere.h
 	g++ -c decrypt.cpp
 
 clean:
-	rm -f main.o tests.o test-ascii.o caesar.o  vigenere.o
+	rm -f main.o tests.o test-ascii.o caesar.o vigenere.o decrypt.o

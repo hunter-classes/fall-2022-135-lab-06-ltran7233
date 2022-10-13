@@ -3,6 +3,7 @@
 #include <string>
 #include "caesar.h"
 #include "vigenere.h"
+#include "decrypt.h"
 
 char decryptChar(char c, int rshift)
 {
@@ -65,5 +66,4 @@ std::string decryptVigenere(std::string ciphertext, std::string keyword)
 	}
 	return str;
 }
-
 

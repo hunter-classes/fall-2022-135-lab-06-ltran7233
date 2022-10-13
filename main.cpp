@@ -3,7 +3,6 @@
 #include "vigenere.h"
 #include "decrypt.h"
 
-
 int main()
 {
 	std::cout << "Caesar Cipher: " << encryptCaesar("Way to Go!", 5) << std::endl;

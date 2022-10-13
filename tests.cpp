@@ -3,6 +3,7 @@
 #include "doctest.h"
 #include "caesar.h"
 #include "vigenere.h"
+#include "decrypt.h"
 
 TEST_CASE("shiftChar tests")
 {
@@ -25,3 +26,19 @@ TEST_CASE("encryptVigenere tests")
 {
 	CHECK(encryptVigenere("Vigenere Cipher Working!", "program") == "Kzukeedt Twvyed Lffqzns!");
 }
+
+TEST_CASE("decryptChar tests")
+{
+	
+}
+
+TEST_CASE("decryptCaesar tests")
+{
+	
+}
+
+TEST_CASE("decryptVigenere tests")
+{
+	
+}
+
