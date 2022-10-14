@@ -14,7 +14,7 @@ std::string encryptVigenere(std::string plaintext, std::string keyword)
 		{
 			if (isupper(keyword[count]))
 			{
-				str += shiftChar(plaintext[i], (keyword[count]+32)%65);
+				str += shiftChar(plaintext[i], (keyword[count]+32)%97);
 				count++;
 			}
 			else

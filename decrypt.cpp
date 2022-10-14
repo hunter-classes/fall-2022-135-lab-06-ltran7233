@@ -46,7 +46,7 @@ std::string decryptVigenere(std::string ciphertext, std::string keyword)
 		{
 			if (isupper(keyword[count]))
 			{
-				str += decryptChar(ciphertext[i], (keyword[count]+32)%65);
+				str += decryptChar(ciphertext[i], (keyword[count]+32)%97);
 				count++;
 			}
 			else
